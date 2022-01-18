@@ -16,3 +16,21 @@ If you want to utilise the Bluetooth capabilities of the E3K in your project, ma
 The E3K firmware and software work together to collect data from the attached EMG, EEG and ECG sensors and send it at high speeds from the device to your host computer. Data transfer is done over serial (USB) and Bluetooth. The transmission mode, transmission rate and active channels can all be configured through the API. 
 
 The E3K collects data through its 12-bit ADC, meaning sensor values lie between 0 - 4095. 
+
+To conserve packet size, data is sent in a custom encoded format, where 12-bit integer values occupy 1.5 bytes in a 9 byte array, allowing for a total of 6 transmitted channels. This prevents having to use 16-bit short integers to store the sensor values, which would waste 4 bits per packet. 
+
+## Reference Guide 
+### findDevices()
+Scans for nearby Bluetooth devices, should be used to check the MAC address of your E3K.
+
+### setState()
+Controls whether the datastream is on or off. 
+
+### setCMode()
+Controls the transmission mode (serial or Bluetooth).
+
+### setDataRate()
+Controls the rate of transmission.
+
+### setChannels()
+Controls the active channels in transmission. 
