@@ -12,7 +12,7 @@ from e3k_serialLib import *
 from e3k_bluetoothLib import *
 
 class E3K:
-    def __init__(self, macAddr, bluetoothPort, serialPortNum):
+    def __init__(self, macAddr='C4:4F:33:17:0E:9B', bluetoothPort=1, serialPortNum='COM4'):
         """
         :param macAddr: MAC Address for Bluetooth communication
         :param bluetoothPort: Port for Bluetooth communication

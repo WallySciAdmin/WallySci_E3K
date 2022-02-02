@@ -5,7 +5,7 @@ This repository features firmware and software for your E3K and host computer re
 
 ## Installation
 ### Firmware 
-The E3K firmware is written in the Arduino framework using the ESP32 MCU's custom libraries. To install it onto your E3K, connect it to your host computer, add the ESP32 Arduino Core through the boards managar inside the Arduino IDE, select the correct COM port and push the firmware on the device. 
+The E3K firmware is written in the Arduino framework using the ESP32 MCU's custom libraries. To install it onto your E3K: connect it to your host computer, add the ESP32 Arduino Core through the boards managar inside the Arduino IDE, select the correct COM port and push the firmware on the device. 
 
 ### Software 
 The E3K API written in Python allows users to add the E3K into their projects without having to deal directly with the hardware. To use, you first need to add the pySerial and pyBluez modules into your Python project. Then, simply include e3k_API.py in your Python project and look at the example.py script to understand how to use the API. 
