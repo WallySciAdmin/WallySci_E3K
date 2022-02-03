@@ -59,6 +59,8 @@ if __name__ == '__main__':
 ### ```findDevices()```
 This function, featured in the first example above, scans for nearby Bluetooth devices. It should ideally be used in a scratch file to find the MAC address of your E3K device before adding any E3K functionality to your project. 
 
+You may avoid it entirely if you don't plan on using Bluetooth in your E3K project. 
+
 ### ```E3K(macAddr, bluetoothPort, serialPortNum)```
 E3K API class. The three arguments specify the Bluetooth MAC address, Bluetooth port and serial port respectively. 
 
